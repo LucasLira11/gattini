@@ -1,0 +1,47 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@theme inline {
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --color-ice: #FCFBF9;
+  --color-cream: #F5EFE8;
+  --color-beige: #E8DCCF;
+  --color-brown-soft: #A68A72;
+  --color-brown-dark: #4B4037;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  html, body {
+    background-color: #FCFBF9;
+    color: #4B4037;
+    font-family: "Inter", system-ui, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    border-color: #E8DCCF;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F5EFE8;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #A68A72;
+    border-radius: 8px;
+  }
+}
+
+@keyframes soft-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.pulse-dot { animation: soft-pulse 1.4s ease-in-out infinite; }
