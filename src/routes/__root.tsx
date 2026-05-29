@@ -51,8 +51,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Gattini — Sistema Clínico" },
       { name: "description", content: "Sistema clínico Gattini para psicologia." },
     ],
-    links: [{ rel: "stylesheet", href: appCss }],
+    links: [
+      { rel: "icon", type: "image/png", href: "/logo-gattinisog.PNG" }, 
+      { rel: "stylesheet", href: appCss }
+    ],
   }),
+// ... resto do código
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,

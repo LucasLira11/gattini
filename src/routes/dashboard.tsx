@@ -34,8 +34,11 @@ function DashboardLayout() {
     <div className="min-h-screen flex bg-[#FCFBF9]">
       <aside className="w-64 bg-[#F5EFE8] border-r border-[#E8DCCF] flex flex-col fixed inset-y-0 left-0 z-10">
         <div className="px-6 py-8 border-b border-[#E8DCCF]">
-          <h1 className="font-serif text-3xl text-[#A68A72]">Gattini</h1>
-          <p className="text-[10px] tracking-widest uppercase text-[#A68A72] mt-1">Clínica</p>
+          <img 
+            src="/logo-gattini.png" 
+            alt="Logo Clínica Gattini" 
+            className="w-full h-full object-cover scale-125 drop-shadow-sm" 
+          />
         </div>
 
         <div className="px-6 pt-4 pb-2 text-xs font-medium text-[#4B4037]">
